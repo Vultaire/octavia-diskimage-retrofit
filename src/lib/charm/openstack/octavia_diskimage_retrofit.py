@@ -213,6 +213,7 @@ class OctaviaDiskimageRetrofitCharm(charms_openstack.charm.OpenStackCharm):
             dest_image.id,
             source_product_name=source_image.product_name or 'custom',
             source_version_name=source_image.version_name or 'custom',
+            hw_vif_multiqueue_enabled='true',
             tags=tags)
         ch_core.hookenv.log('Successfully created image "{}" with id "{}"'
                             .format(dest_image.name, dest_image.id),

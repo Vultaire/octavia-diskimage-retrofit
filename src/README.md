@@ -2,6 +2,12 @@
 
 This subordinate charm provides the Octavia Diskimage Retrofit tool
 
+Fork of octavia-diskimage-retrofit-12 to include the
+hw_vif_multiqueue_enabled='true' glance tweak.
+
+This is equivalent to the code in cs:~vern/octavia-diskimage-retrofit-1,
+except that the snap channel has been reverted back from edge to beta.
+
 # Usage
 
 There is a [section in the Octavia][amphora-octavia-cdg] appendix in the
